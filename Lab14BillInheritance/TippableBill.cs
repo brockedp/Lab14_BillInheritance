@@ -24,7 +24,7 @@ namespace Lab14BillInheritance
         public override double CalcTotal()
         {
 
-            double total = (Subtotal * (1 + TaxRate));
+            double total = base.CalcTotal();
             total += Tip;
             
             return total;
